@@ -3,27 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A little birthday surprise filled with love, laughter, and warm wishes." />
-  <title>Happy Birthday! 🎂</title>
+  <meta name="description" content="A dreamy Korean-inspired birthday memory book made especially for you." />
+  <title>생일 축하해 — Happy Birthday</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="hero">
-    <div class="confetti" aria-hidden="true"></div>
-    <section class="card" aria-labelledby="birthday-title">
-      <span class="eyebrow">A little surprise for you</span>
-      <div class="cake" aria-hidden="true">🎂</div>
-      <h1 id="birthday-title">Happy Birthday! <span>🎉</span></h1>
-      <p class="intro">May your special day be filled with sunshine, laughter, wonderful memories, and everything that makes you smile.</p>
-      <button class="wish-button" id="wishButton" type="button">Make a wish ✨</button>
-      <p class="wish" id="wishMessage" aria-live="polite">Click the button for a birthday surprise!</p>
-      <div class="signature">With lots of love 💖</div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">✳</span> 오늘의 주인공</a>
+    <a class="nav-link" href="#memories">our memories <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> a little note for you</p>
+        <h1>Happy<br /><em>Birthday</em><span class="dot">.</span></h1>
+        <p class="hero-text">오늘은 세상에서 가장 소중한<br />당신을 위한 날이에요.</p>
+        <button class="primary-button" id="wishButton" type="button">Open your surprise <span>→</span></button>
+      </div>
+      <div class="hero-art" aria-label="Birthday cake illustration" role="img">
+        <div class="sun"></div>
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+        <div class="cake-shadow"></div>
+        <div class="cake-plate"></div>
+        <div class="cake">
+          <div class="candle candle-one"><i></i></div>
+          <div class="candle candle-two"><i></i></div>
+          <div class="candle candle-three"><i></i></div>
+          <div class="icing"></div>
+          <div class="cake-body"><span>♡</span><span>♡</span><span>♡</span></div>
+        </div>
+        <p class="art-caption">another trip<br />around the sun</p>
+      </div>
+    </section>
+
+    <section class="message-section wrap" id="message">
+      <p class="section-label">01 / a birthday wish</p>
+      <div class="message-grid">
+        <h2>For the person<br /><em>who makes life</em><br />a little brighter.</h2>
+        <div class="message-copy">
+          <p>May this new chapter bring you soft mornings, unexpected adventures, and all the little things that make your heart feel full.</p>
+          <p class="korean-note">당신의 모든 날들이 반짝이길 바라요 <span>♡</span></p>
+          <p class="signature">with all my love, <strong>always</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories-section wrap" id="memories">
+      <div class="section-heading">
+        <div><p class="section-label">02 / little moments</p><h2>Collected <em>memories</em></h2></div>
+        <p class="heading-note">A few frames from<br />your beautiful story <span>↓</span></p>
+      </div>
+      <div class="gallery">
+        <button class="photo photo-tall" data-image="Screenshot_20260918-140437.Instagram~2.jpg" aria-label="Open memory one"><img src="Screenshot_20260918-140437.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>01</span></button>
+        <button class="photo photo-small" data-image="Screenshot_20260918-140502.Instagram~2.jpg" aria-label="Open memory two"><img src="Screenshot_20260918-140502.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>02</span></button>
+        <button class="photo photo-wide" data-image="Screenshot_20260918-140506.Instagram~2.jpg" aria-label="Open memory three"><img src="Screenshot_20260918-140506.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>03</span></button>
+        <button class="photo photo-small second" data-image="Screenshot_20260918-140521.Instagram~2.jpg" aria-label="Open memory four"><img src="Screenshot_20260918-140521.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>04</span></button>
+        <button class="photo photo-wide bottom" data-image="Screenshot_20260918-140532.Instagram~2.jpg" aria-label="Open memory five"><img src="Screenshot_20260918-140532.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>05</span></button>
+        <button class="photo photo-tall last" data-image="Screenshot_20260918-140537.Instagram~2.jpg" aria-label="Open memory six"><img src="Screenshot_20260918-140537.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>06</span></button>
+        <button class="photo photo-small final" data-image="Screenshot_20260918-140602.Instagram~2.jpg" aria-label="Open memory seven"><img src="Screenshot_20260918-140602.Instagram~2.jpg" alt="Birthday memory" loading="lazy" /><span>07</span></button>
+      </div>
+    </section>
+
+    <section class="closing wrap">
+      <div class="closing-line"></div>
+      <p class="kicker"><span></span> one more thing</p>
+      <h2>Keep shining,<br /><em>beautiful soul.</em> ✦</h2>
+      <button class="secondary-button" id="againButton" type="button">Make another wish <span>✦</span></button>
+      <p class="surprise" id="wishMessage" aria-live="polite"></p>
     </section>
   </main>
-  <footer>Made especially for a very special person</footer>
+
+  <footer class="wrap"><span>생일 축하해</span><span>made with love · 2026</span></footer>
+  <dialog id="lightbox"><button class="close-lightbox" aria-label="Close image">×</button><img id="lightboxImage" src="" alt="Expanded birthday memory" /></dialog>
   <script src="script.js"></script>
 </body>
 </html>
